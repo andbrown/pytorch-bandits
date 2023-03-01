@@ -15,7 +15,7 @@ class BanditEnv():
         self.reward_list = reward_list
 
     def step(self, action):
-        if torch.rand(1).item() < self.payout_list[action]
+        if torch.rand(1).item() < self.payout_list[action]:
             return self.reward_list[action]
         return 0
-        
+
